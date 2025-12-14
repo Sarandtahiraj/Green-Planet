@@ -1,0 +1,1254 @@
+/* ===================== RESET & BAZA ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Avenir Next', 'Avenir', 'Helvetica Neue', sans-serif;
+    line-height: 1.8;
+    color: #333;
+    font-size: 18px;
+}
+
+/* ===================== SHIRITI SIPËR ===================== */
+.shiriti-siper {
+    background-color: #0a1f44;
+    color: white;
+    padding: 20px 0;
+}
+
+.shiriti-siper-nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.shiriti-majtas {
+    flex: 1;
+}
+
+.shiriti-djathtas {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+/* Stilizimi për seksionin e orarit */
+.orari {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+/* Stilizimi për ikonat sociale */
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-icons a:hover {
+    opacity: 0.4;
+    background-color: rgba(172, 191, 245, 0.2);
+}
+
+/* ===================== NAVIGIMI KRYESOR ===================== */
+.navigimi {
+    background-color: #1e3a8a;
+    padding: 25px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.logo-brendi {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin-right: 60px;
+}
+
+.menyja-nav {
+    display: flex;
+    list-style: none;
+    gap: 45px;
+    flex: 1;
+}
+
+.menyja-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s;
+    padding: 8px 0;
+}
+
+.menyja-nav a:hover,
+.menyja-nav a.aktiv {
+    opacity: 0.7;
+    border-bottom: 3px solid white;
+}
+
+.butoni-konsultim {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 18px 40px;
+    border-radius: 45px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.butoni-konsultim:hover {
+    background-color: #2563eb;
+}
+
+/* ===================== SEKSIONI HERO ===================== */
+.hero {
+    background-color: rgba(30, 58, 138, 0.9);
+    color: white;
+    padding: 120px 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('fotot/vecteezy_yellow-helmet-on-green-with-ecological-icon_5128678.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.10;
+    
+}
+
+.hero-container {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    z-index: 1;
+}
+
+.hero-teksti h4 {
+    color: #93c5fd;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-teksti h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    line-height: 1.1;
+}
+
+.hero-teksti p {
+    font-size: 22px;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.butoni-hero {
+    background-color: white;
+    color: #1e3a8a;
+    border: none;
+    padding: 18px 40px;
+    border-radius: 45px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.butoni-hero:hover {
+    transform: translateY(-3px);
+}
+
+.hero-fotografia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-foto {
+    width: 550px;
+    height: 550px;
+}
+
+/* ===================== SEKSIONI RRETH NESH ===================== */
+.rreth-nesh {
+    background-color: #f8fafc;
+    color: #1e3a8a;
+    padding: 120px 40px;
+}
+
+.rreth-nesh-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.rreth-fotografia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.rreth-teksti {
+    flex: 1;
+}
+
+.rreth-foto {
+    width: 550px;
+    height: 550px;
+}
+
+.rreth-teksti h4 {
+    color: #3b82f6;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.rreth-teksti h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    line-height: 1.1;
+    color: #1e3a8a;
+}
+
+.rreth-teksti p {
+    font-size: 22px;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    color: #475569;
+}
+
+.butoni-rreth {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    color: white;
+    border: none;
+    padding: 18px 40px;
+    border-radius: 45px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.butoni-rreth:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(30, 58, 138, 0.2);
+}
+
+/* ===================== SEKSIONI STATISTIKA ===================== */
+.statistika {
+    background-color: #0a1f44;
+    color: white;
+    padding: 100px 40px;
+}
+
+.statistika-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.statistika-teksti {
+    flex: 1;
+    text-align: left;
+}
+
+.statistika-teksti p {
+    color: #3b82f6;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.statistika-teksti h3 {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    line-height: 1.2;
+}
+
+.statistika-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+}
+
+.statistika-item {
+    padding: 40px 30px;
+    border-radius: 12px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.statistika-item:hover {
+    transform: translateY(-10px);
+}
+
+.statistika-item h2 {
+    font-size: 45px;
+    margin: 15px 0;
+    color: #3b82f6;
+}
+
+.statistika-item p {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.5;
+}
+
+/* ===================== SEKSIONI SHËRBIME ===================== */
+.sherbime {
+    padding: 120px 40px;
+    background-color: #f9fafb;
+}
+
+.sherbime-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.sherbime-container h4 {
+    color: #3b82f6;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.sherbime-container h2 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0a1f44;
+}
+
+.sherbime-container > p {
+    text-align: center;
+    margin-bottom: 80px;
+    color: #666;
+    font-size: 20px;
+}
+
+.sherbime-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+.sherbimi-card {
+    background-color: white;
+    padding: 50px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.sherbimi-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.sherbimi-ikona {
+    font-size: 70px;
+    margin-bottom: 25px;
+}
+
+.sherbimi-card h3 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0a1f44;
+}
+
+.sherbimi-card p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #030303;
+    margin-bottom: 30px;
+}
+
+.btn-sherbimi {
+    display: block;
+    color: #0a0a0a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    margin-top: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.btn-sherbimi:hover {
+    color: #3b82f6;
+}
+
+/* ===================== SEKSIONI PSE TË NA ZGJEDHNI ===================== */
+.pse-ne {
+    padding: 120px 40px;
+    background-color: white;
+}
+
+.pse-ne-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.pse-ne-teksti {
+    flex: 2;
+}
+
+.pse-ne-teksti h5 {
+    color: #3b82f6;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.pse-ne-teksti h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #0a1f44;
+    line-height: 1.2;
+}
+
+.pse-ne-teksti > p {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 50px;
+    max-width: 600px;
+}
+
+.shkalla-suksesi {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-top: 1px solid rgb(201, 198, 198);
+}
+
+.rrethi-perqindje {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.rrethi-perqindje::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(
+        #0a1f44 0deg 288deg,
+        #e5e7eb 288deg 360deg
+    );
+}
+
+.rrethi-interno {
+    position: relative;
+    z-index: 1;
+    width: 140px;
+    height: 140px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rrethi-interno span:first-child {
+    font-size: 42px;
+    font-weight: bold;
+    color: #0a1f44;
+    line-height: 1;
+}
+
+.shkalla-teksti {
+    flex: 1;
+}
+
+.shkalla-teksti h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #0a1f44;
+}
+
+.shkalla-teksti p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.pse-ne-fotografia {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pse-ne-foto {
+    width: 600px;
+    height: 600px;
+}
+
+/* ===================== SEKSIONI PROCESI ===================== */
+.procesi {
+    padding: 120px 40px;
+    background-color: white;
+}
+
+.procesi-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.procesi-container h4 {
+    color: #3b82f6;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.procesi-container h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0a1f44;
+}
+
+.procesi-container > p {
+    text-align: center;
+    margin-bottom: 80px;
+    color: #666;
+    font-size: 20px;
+}
+
+.procesi-hapat {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.hapi {
+    text-align: center;
+    padding: 40px 30px;
+}
+
+.hapi-numero {
+    width: 80px;
+    height: 80px;
+    color: #0a1f44;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 auto 25px;
+    box-shadow: 1px 0px 8px rgb(58, 58, 184);
+}
+
+.hapi-numero-aktiv {
+    width: 80px;
+    height: 80px;
+    background-color: #0a1f44;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 auto 25px;
+    box-shadow: 1px 0px 25px rgb(58, 58, 184);
+}
+
+.hapi h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #0a1f44;
+}
+
+.hapi p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* ===================== SEKSIONI EKIPI ===================== */
+.ekipi {
+    padding: 100px 40px;
+    background-color: #ffffff;
+}
+
+.ekipi-container {
+    max-width: 1800px;
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
+}
+
+.ekipi-majtas {
+    flex: 1;
+}
+
+.ekipi-majtas h5 {
+    color: #3b82f6;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.ekipi-majtas h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #072a66;
+}
+
+.ekipi-majtas > p {
+    font-size: 20px;
+    line-height: 1.9;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.lista-info {
+    list-style: none;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.lista-info li {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.butoni-lexo {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 18px 40px;
+    border-radius: 45px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.butoni-lexo:hover {
+    background-color: #1755dc;
+}
+
+.ekipi-djathtas {
+    flex: 1;
+}
+
+.anetaret-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.anetari {
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.anetari-foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 1px 0px 25px rgb(126, 126, 128);
+}
+
+.anetari h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #0a1f44;
+}
+
+.anetari p {
+    font-size: 22px;
+    color: #4d4c4c;
+}
+
+/* ===================== SEKSIONI ÇMIMET ===================== */
+.cmimet {
+    padding: 120px 40px;
+    background-color: white;
+}
+
+.cmimet-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.cmimet-container h5 {
+    color: #3b82f6;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.cmimet-container h2 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 80px;
+    color: #0a1f44;
+}
+
+.planet-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.plani {
+    background-color: #f9fafb;
+    padding: 50px 40px;
+    border-radius: 12px;
+    border: 3px solid #e5e7eb;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.plani:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-color: #3b82f6;
+}
+
+.plani-aktiv {
+    background-color: white;
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+}
+
+.plani h3 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #0a1f44;
+}
+
+.cmimi {
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: rgb(48, 47, 47);
+}
+
+.plani p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.butoni-zgjedh {
+    background-color: white;
+    color: #0a1f44;
+    border: 3px solid #0a1f44;
+    padding: 16px 40px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 30px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.butoni-zgjedh:hover {
+    background: linear-gradient(to right, #0a1f44, #2c63bb);
+    color: white;
+}
+
+.plani-aktiv .butoni-zgjedh {
+    background: linear-gradient(to right, #0a1f44, #2c63bb);
+    color: white;
+    border: 3px solid #0a1f44;
+}
+
+.plani-aktiv .butoni-zgjedh:hover {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+
+.vecorite {
+    list-style: none;
+    text-align: left;
+    font-size: 18px;
+}
+
+.vecorite li {
+    font-weight: bold;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.plani-aktiv .vecorite li {
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.vecorite li:last-child {
+    border-bottom: none;
+}
+
+/* ===================== SEKSIONI PYTJET ===================== */
+.pyetjet {
+    padding: 120px 40px;
+    background-color: #f9fafb;
+}
+
+.pyetjet-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+.pyetjet-majtas {
+    flex: 1;
+}
+
+.pyetjet-majtas h5 {
+    color: #1f4685;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.pyetjet-majtas h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0a1f44;
+    line-height: 1.2;
+}
+
+.pyetjet-majtas > p {
+    font-size: 20px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.butoni-pyetje {
+    background-color: #0a1f44;
+    color: white;
+    border: none;
+    padding: 19px 40px;
+    border-radius: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.butoni-pyetje:hover {
+    background-color: #2563eb;
+}
+
+.pyetjet-djathtas {
+    flex: 1;
+}
+
+.pyetja-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.pyetja-item {
+    position: relative;
+    background-color: white;
+    padding: 40px 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s;
+}
+
+.pyetja-item:hover {
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.pyetja-item h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #0a1f44;
+}
+
+.pyetja-item p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #666;
+}
+
+.pyetje-e-hapur {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.pyetje-e-hapur:last-child {
+    margin-bottom: 0;
+}
+
+.pyetje-e-hapur h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #0a1f44;
+    padding-right: 40px;
+}
+
+.shenja-plus {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 24px;
+    color: #3b82f6;
+    font-weight: bold;
+}
+
+/* ===================== SEKSIONI ABONIMI ===================== */
+.abonimi {
+    background-color: #0a1f44;
+    color: white;
+    padding: 120px 40px;
+    text-align: center;
+}
+
+.abonimi-container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.abonimi-container h5 {
+    color: #3b82f6;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.abonimi-container h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.abonimi-forma {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto 20px;
+}
+
+.input-email {
+    width: 100%;
+    padding: 19px 150px 18px 50px;
+    border: 3px solid #e0e0e0;
+    color: white;
+    border-radius: 50px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #0a1f44;
+}
+
+.input-email::placeholder {
+    color: #888;
+}
+
+.butoni-abonohu {
+    position: absolute;
+    right: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #1256c3;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 17px 24px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(13, 22, 38, 0.3);
+}
+
+.butoni-abonohu:hover {
+    background: linear-gradient(to right, #7daefc, #4678db);
+    box-shadow: 0 6px 15px rgba(30, 60, 114, 0.4);
+}
+
+/* ===================== SEKSIONI KONTAKTI ===================== */
+.kontakti {
+    padding: 100px 40px;
+    background-color: white;
+}
+
+.kontakti-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 90px;
+}
+
+.kontakti-item {
+    background-color: #efefef;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    transition: all 0.3s ease;
+}
+
+.kontakti-item:hover {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.kontakti-item i {
+    width: 90px;
+    height: 90px;
+    background-color: #0f70d2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #ffffff;
+}
+
+.kontakti-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.kontakti-item h5 {
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: #787878;
+    text-align: left;
+    width: 100%;
+}
+
+.kontakti-item p {
+    font-size: 20px;
+    color: #434345;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+    width: 100%;
+}
+
+/* ===================== SEKSIONI LIDHJET ===================== */
+.lidhjet {
+    background-color: white;
+    color: white;
+    padding: 80px 20px 40px;
+}
+
+.lidhjet-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.lidhjet-container > .pershkrimi-container:first-child {
+    grid-column: span 1;
+    padding-right: 20px;
+}
+
+.lidhjet-container .pershkrimi-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(39, 39, 39);
+    line-height: 1.3;
+}
+
+.lidhjet-container .pershkrimi-container p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: rgba(39, 39, 39, 0.8);
+    max-width: 400px;
+}
+
+.logo-brendi-2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0a1f44;
+    margin-right: 60px;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    padding: 0 15px;
+}
+
+.iconat-lidhjet {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+    padding-top: 20px;
+}
+
+.iconat-lidhjet svg {
+    background-color: #d2d2d3;
+    border-radius: 20px;
+    width: 25px;
+    height: 25px;
+    fill: rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.iconat-lidhjet svg:hover {
+    fill: #0f70d2;
+    transform: translateY(-2px);
+}
+
+.lidhja-kolona {
+    padding: 15px 0;
+}
+
+.lidhja-kolona h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: rgb(31, 30, 30);
+}
+
+.lidhja-kolona ul {
+    list-style: none;
+}
+
+.lidhja-kolona li {
+    margin-bottom: 15px;
+}
+
+.lidhja-kolona a {
+    color: rgba(38, 36, 36, 0.7);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 14px;
+    display: block;
+    padding: 2px 0;
+}
+
+.lidhja-kolona a:hover {
+    color: #3b82f6;
+}
+
+/* ===================== FOOTER ===================== */
+.footer {
+    background-color: #ffffff;
+    color: rgba(6, 6, 6, 0.6);
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 1px solid rgba(14, 11, 11, 0.1);
+    font-size: 14px;
+}
